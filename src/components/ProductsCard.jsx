@@ -21,14 +21,14 @@ const ProductsCard = ({ product }) => {
   }
 
   return (
-    <div className="w-full relative group">
-      <div onClick={handleDetails} className="w-full h-96 cursor-pointer overflow-hidden">
+    <div className="w-full relative group rounded-lg hover:shadow-2xl">
+      <div onClick={handleDetails} className="w-full h-96 cursor-pointer overflow-hidden rounded-t-lg">
         <img
           className="w-full h-full object-cover group-hover:scale-110 duration-500"
           src={product.image}
         />
       </div>
-      <div className="w-full border-[1px] px-2 py-4">
+      <div className="w-full border-[1px] px-2 py-4 rounded-b-lg">
         <div className="flex justify-between items-center">
           <div>
             <h2 className="font-titleFont text-base font-bold">
@@ -44,7 +44,7 @@ const ProductsCard = ({ product }) => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="rounded-lg">
           <p>{product.category}</p>
         </div>
         <div className="absolute top-4 right-0">{product.isNew && (
