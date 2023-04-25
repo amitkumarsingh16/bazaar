@@ -56,4 +56,6 @@ export const {
     decrementQuantity,
 } = bazarSlice.actions;
 
+console.log(bazarSlice)
+
 export default bazarSlice.reducer;
